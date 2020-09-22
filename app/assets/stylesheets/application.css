@@ -13,3 +13,65 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----top.html.erb----*/
+.top-heading {
+  display: block;
+  font-size: 30px;
+}
+
+.top-text {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/*----index.html.erb----*/
+.main-heading {
+  display: block;
+  font-size: 30px;
+}
+
+.table-title {
+  text-align: center;
+}
+.table-body {
+  text-align: center;
+}
+
+.table-data {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.create-heading {
+  font-size: 23px;
+  margin: 10px;
+}
+
+.create-title {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+/*----show.html.erb----*/
+.show-category {
+  font-size: 20px;
+  margin: 15px auto 15px 50px;
+}
+
+.show-title {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.tab {
+  margin-top: 30px;
+  margin-left: 20px;
+}
