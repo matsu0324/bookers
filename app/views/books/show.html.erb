@@ -1,9 +1,7 @@
 <p class="show-block">
-  <h2 class="show-category"><strong>Title:</strong></h2>
-  <div class="show-title"><%= @book.title %></div>
+  <p class="show-title"><strong>Title:</strong>   <%= @book.title %></p>
 </p>
 <p class="show-block">
-  <h2 class="show-category"><strong>Body</strong>:</h2>
-  <div class="show-title"><%= @book.body %></div>
+  <p class="show-title"><strong>Body:</strong>    <%= @book.body %></p>
 </p>
 <p class="tab"><%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", books_path(@book.id) %></p>

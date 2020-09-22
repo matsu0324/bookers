@@ -20,6 +20,11 @@
   box-sizing: border-box;
 }
 
+.flash {
+  font-size: 13px;
+  color: #00ff7f;
+}
+
 /*----top.html.erb----*/
 .top-heading {
   display: block;
@@ -55,9 +60,13 @@ main {
   text-align: center;
 }
 
+.table-row {
+  text-align: center;
+}
+
 .table-data {
   padding: 0 10px;
-  text-align: center;
+  text-align: left;
   font-size: 13px;
 }
 
@@ -79,14 +88,9 @@ main {
   display: flex;
 }
 
-.show-category {
-  font-size: 13px;
-  margin: 15px auto 15px 50px;
-}
-
 .show-title {
   font-size: 13px;
-  margin-left: 50px;
+  margin: 10px auto 20px 40px;
 }
 
 .tab {
@@ -107,5 +111,9 @@ body {
 
 .edit-title {
   font-size: 13px;
-  margin-bottom: 10px;
+}
+
+.edit-tab {
+  font-size: 13px;
+  margin-top: 10px;
 }

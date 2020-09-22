@@ -13,8 +13,8 @@ class BooksController < ApplicationController
     if book.save
        redirect_to book_path(book.id), notice: 'Your book was successfully created'
     else
-      flash.now[:alert] = 'no'
-      render :index
+       flash.now[:alert] = 'This item cannot be blank'
+       render :index
     end
   end
   def show
@@ -36,6 +36,6 @@ class BooksController < ApplicationController
 
   private
   def book_params
-    params.permit(:title, :body)
+    params.require(:book).permit(:title, :body)
   end
 end
