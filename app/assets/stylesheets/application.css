@@ -24,6 +24,11 @@
 .top-heading {
   display: block;
   font-size: 30px;
+  margin: 20px auto 0 16px;
+}
+
+.big {
+  font-size: 17px;
 }
 
 .top-text {
@@ -32,7 +37,12 @@
   margin: 33px;
 }
 
+
 /*----index.html.erb----*/
+main {
+  margin: 30px;
+}
+
 .main-heading {
   display: block;
   font-size: 30px;
@@ -46,13 +56,17 @@
 }
 
 .table-data {
-  margin: 0 10px;
+  padding: 0 10px;
   text-align: center;
+  font-size: 13px;
+}
+
+.create-book {
+  margin-top: 20px;
 }
 
 .create-heading {
   font-size: 23px;
-  margin: 10px;
 }
 
 .create-title {
@@ -61,17 +75,37 @@
 }
 
 /*----show.html.erb----*/
+.show-block {
+  display: flex;
+}
+
 .show-category {
-  font-size: 20px;
+  font-size: 13px;
   margin: 15px auto 15px 50px;
 }
 
 .show-title {
-  display: inline-block;
+  font-size: 13px;
   margin-left: 50px;
 }
 
 .tab {
   margin-top: 30px;
   margin-left: 20px;
+  font-size: 13px;
+}
+
+/*----edit.html.erb----*/
+body {
+  margin: 30px;
+}
+
+.edit-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.edit-title {
+  font-size: 13px;
+  margin-bottom: 10px;
 }

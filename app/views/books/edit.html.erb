@@ -1,8 +1,11 @@
-<h1>Editing Book</h1>
-<%= form_with model:@book, url:"/books/#{@book.id}", local:true do |f| %>
-  <h4>Title</h4>
-  <%= f.text_field :title %>
-  <h4>Body</h4>
-  <%= f.text_area :body %>
-  <%= f.submit 'Update Book' %>
- <% end %>
+<body>
+<h1 class="edit-heading">Editing Book</h1>
+  <%= form_with model:@book, url:"/books/#{@book.id}", local:true do |f| %>
+    <h4 class="edit-title">Title</h4>
+    <%= f.text_field :title %>
+    <h4 class="edit-title">Body</h4>
+    <%= f.text_area :body %>
+    <p><%= f.submit 'Update Book' %></p>
+    <p><%= link_to 'Show', book_path(@book.id) %> | <%= link_to "Back", books_path(@book.id) %></p>
+  <% end %>
+</body>
