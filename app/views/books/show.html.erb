@@ -1,7 +1,7 @@
 <p class="show-block">
-  <p class="show-title"><strong>Title:</strong>   <%= @book.title %></p>
+  <p class="show-title"><strong>Title:</strong> <%= @book.title %></p>
 </p>
 <p class="show-block">
-  <p class="show-title"><strong>Body:</strong>    <%= @book.body %></p>
+  <p class="show-title"><strong>Body:</strong>  <%= @book.body %></p>
 </p>
-<p class="tab"><%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", books_path(@book.id) %></p>
+<p class="tab"><%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", books_path %></p>

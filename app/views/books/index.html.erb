@@ -15,14 +15,24 @@
       </tr>
     <% end %>
     </table>
+    <% if @book.errors.any? %>
+　　<div id="error_explanation" class="alert alert-danger">
+　　  <h2>error</h2>
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+          <li class="error"><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
     <div class="create-book">
       <h2 class="create-heading"><b>New book</b></h2>
-    <%= form_with model:@book, local:true do |f| %>
-      <h3 class="create-title">Title</h3>
+      <%= form_with model:@book, local:true do |f| %>
+        <h3 class="create-title">Title</h3>
       <%= f.text_field :title %>
-      <h3 class="create-title">Body</h3>
+        <h3 class="create-title">Body</h3>
       <%= f.text_area :body %>
-      <p><%= f.submit 'Create Book' %></p>
+        <p><%= f.submit 'Create Book' %></p>
     </div>
     <% end %>
 </main>

@@ -25,6 +25,10 @@
   color: #00ff7f;
 }
 
+.error {
+  color: red;
+}
+
 /*----top.html.erb----*/
 .top-heading {
   display: block;
